@@ -26,14 +26,9 @@ makeRPCRequest = function(funname,...params ){
 //request : makeRPCRequest로 만든 JSON RPC form으로
 //axios를 이용해 해당 명령을 호출시켜, 결과값을 반환함
 receiveFromRequest = async function(request){
-
-
-
     return axios(request).then((result, err) => {
         return result.data;
     });
-
-
 }
 
 module.exports = {
